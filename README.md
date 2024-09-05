@@ -1,5 +1,6 @@
 # k8s-ubuntu
 Kubernetes setup on Ubuntu 24.04 LTS
+00 01 02 excuet at all nodes.
 
 To start using your cluster, you need to run the following as a regular user:
 
