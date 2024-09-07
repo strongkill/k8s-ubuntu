@@ -13,3 +13,11 @@ helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dash
 
 kubectl -n kubernetes-dashboard get all
 kubectl get pods -A -owide
+
+#create admin for dashboard
+kubectl create -f files/dashboard-admin.yaml
+
+#create token
+kubectl create -f files/dashboard-user-token.yaml
+#or
+kubectl create token dashboard-admin --namespace kubernetes-dashboard

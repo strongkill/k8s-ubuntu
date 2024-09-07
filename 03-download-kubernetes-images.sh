@@ -14,4 +14,4 @@ registry.k8s.io/coredns/coredns
 registry.k8s.io/pause
 registry.k8s.io/etcd
 ";
-kubeadm config images pull
+kubeadm config images pull --cri-socket=unix:///var/run/crio/crio.sock
